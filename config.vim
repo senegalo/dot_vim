@@ -29,7 +29,7 @@ endif
 " ---------------
 set ruler          " Ruler on
 set number         " Line numbers on
-set nowrap         " Line wrapping off
+set wrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
 set cursorline     " Highlight current line
@@ -131,7 +131,7 @@ set t_vb=
 " Mouse
 " ---------------
 set mousehide  " Hide mouse after chars typed
-set mouse=a    " Mouse in all modes
+"set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U

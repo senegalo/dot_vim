@@ -9,6 +9,8 @@ let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeChDirMode = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeForceMac = 1
+let g:NERDTreeMirror = 1
+map <C-p> :NERDTreeToggle<CR>
+
 " Close Vim if NERDTree is the last buffer
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
-  \&& b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

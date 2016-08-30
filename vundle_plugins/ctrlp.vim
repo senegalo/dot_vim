@@ -5,7 +5,7 @@ endif
 
 " Ensure Ctrl-P isn't bound by default
 let g:ctrlp_map = ''
-
+map <C-o> :CtrlP<CR>
 " Ensure max height isn't too large. (for performance)
 let g:ctrlp_max_height = 10
 " Fix fix new windows opening in split from startify
@@ -16,6 +16,12 @@ let g:ctrlp_mruf_default_order = 0
 " Leader Commands
 nnoremap <leader>. :CtrlPRoot<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
+
+let g:ctrlp_prompt_mappings = {
+      \ 'AcceptSelection("e")': ['<c-t>'],
+      \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+      \ }
+
 
 if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
