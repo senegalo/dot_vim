@@ -12,6 +12,7 @@ let g:ctrlp_max_height = 10
 let g:ctrlp_reuse_window = 'startify'
 let g:ctrlp_mruf_max = 350
 let g:ctrlp_mruf_default_order = 0
+let g:ctrlp_working_path_mode = 0
 
 " Leader Commands
 nnoremap <leader>. :CtrlPRoot<CR>
