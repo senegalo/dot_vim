@@ -7,6 +7,11 @@
 let mapleader=','
 let maplocalleader = ' '
 
+
+" Map next tab
+nnoremap t gt
+nnoremap T gT
+
 " -----------------------
 " Unmapped While Learning
 " -----------------------
