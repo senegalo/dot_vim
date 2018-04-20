@@ -10,6 +10,7 @@ let g:NERDTreeChDirMode = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeForceMac = 1
 let g:NERDTreeMirror = 1
+:let g:NERDTreeWinSize = 60
 map <C-p> :NERDTreeToggle<CR>
 
 " Close Vim if NERDTree is the last buffer

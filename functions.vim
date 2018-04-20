@@ -2,6 +2,12 @@
 " Functions
 " ----------------------------------------
 
+function! FormatJSON()
+  :set filetype=json
+  :%!python -m json.tool
+endfunction
+command! FormatJSON call FormatJSON()
+
 " ---------------
 " Quick spelling fix (first item in z= list)
 " ---------------
