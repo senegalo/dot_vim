@@ -9,25 +9,25 @@ let maplocalleader = ' '
 
 
 " Map next tab
-nnoremap t gt
-nnoremap T gT
+" nnoremap t gt
+" nnoremap T gT
 
 " -----------------------
 " Unmapped While Learning
 " -----------------------
 
 " No-op ^ and $ while learning H and L
-noremap ^ <nop>
-noremap $ <nop>
-nnoremap <leader>sc <nop>
+" noremap ^ <nop>
+" noremap $ <nop>
+" nnoremap <leader>sc <nop>
 
 " ---------------
 " Regular Mappings
 " ---------------
 
 " Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
+" nnoremap ; :
+" vnoremap ; :
 
 " Yank entire buffer with gy
 nnoremap gy :0,$ y<cr>
@@ -40,8 +40,8 @@ nnoremap vy ggVG
 nnoremap Y y$
 
 " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
-noremap H ^
-noremap L $
+" noremap H ^
+" noremap L $
 
 " Create newlines without entering insert mode
 nnoremap go o<Esc>k
